@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>상품 페이지</title>
+    <link rel="stylesheet" type="text/css" href="product.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+
+</head>
+<body>
+    <header>
+        <div class="top"> 
+            <!-- 맨위 작은 메뉴 -->
+                <ul class="top-menu">
+                    <li class="test"><a href="Raffle.html"><p>래플</p></a></li>
+                    <li class="test"><a href="Log.html"><p>로그아웃</p></a></li>
+                    <li class="test"><a href="Mypage.html"><p>마이페이지</p></a></li>
+                    <li class="test"><a href="ShoppingCart.html"><p>장바구니</p></a></li>
+                </ul>
+        </div>
+        <!-- 제목 타이틀 -->
+        <hl class="title">
+            <img src="images/DGBM_ON.png" alt="logo" width="225">
+            Graphic Card Shop
+        </hl>
+        <nav>
+            <ul>
+                <li><a href="main_logged_in.html">Home</a></li>
+                <li><a href="Productpage.html">Products</a></li> <!--PRODUCT 클릭시 productpage.html로 이동-->
+                <li><a href="customer.html">Customer Service</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="product-page">
+        <section class="sorting-options">
+            <!-- 분류 옵션들을 감싸는 부모 요소 -->
+            <span class="sorting-option" data-sort="high-price">높은가격순</span>
+            <span class="sorting-option" data-sort="low-price">낮은가격순</span>
+    </div>
+    <div class="product-page">
+        <section class="filter-options">
+            <!-- 제조사별 필터 옵션 -->
+            <div class="manufacturer-options">
+                <h3>제조사별</h3>
+                <label><input type="checkbox" class="manufacturer-filter" data-manufacturer="ASUS"> ASUS</label>
+                <label><input type="checkbox" class="manufacturer-filter" data-manufacturer="GIGABYTE"> GIGABYTE</label>
+                <label><input type="checkbox" class="manufacturer-filter" data-manufacturer="GALAX"> GALAX</label>
+                <label><input type="checkbox" class="manufacturer-filter" data-manufacturer="MSI"> MSI</label>
+                <label><input type="checkbox" class="manufacturer-filter" data-manufacturer="XFX"> XFX</label>
+            </div>
+            <!-- NVIDIA 칩셋 필터 옵션 -->
+            <div class="nvidia-options">
+                <h3>NVIDIA 칩셋</h3>
+                <label><input type="checkbox" class="chipset-filter" data-chipset="RTX 3060"> RTX 3060</label>
+                <label><input type="checkbox" class="chipset-filter" data-chipset="RTX 3070"> RTX 3070</label>
+                <label><input type="checkbox" class="chipset-filter" data-chipset="RTX 3080"> RTX 3080</label>
+            </div>
+
+            <!-- 추가: AMD 칩셋 필터 옵션 -->
+            <div class="amd-options">
+                <h3>AMD 칩셋</h3>
+                <label><input type="checkbox" class="chipset-filter" data-chipset="RX 7600"> RX 7600</label>
+                <label><input type="checkbox" class="chipset-filter" data-chipset="RX 7700"> RX 7700</label>
+                <label><input type="checkbox" class="chipset-filter" data-chipset="RX 7800"> RX 7800</label>
+            </div>
+
+            <!-- 추가: 메모리용량 필터 옵션 -->
+            <div class="memory-options">
+                <h3>메모리용량</h3>
+                <label><input type="checkbox" class="memory-filter" data-memory="24GB"> 24GB</label>
+                <label><input type="checkbox" class="memory-filter" data-memory="16GB"> 16GB</label>
+                <label><input type="checkbox" class="memory-filter" data-memory="12GB"> 12GB</label>
+                <label><input type="checkbox" class="memory-filter" data-memory="8GB"> 8GB</label>
+                <label><input type="checkbox" class="memory-filter" data-memory="6GB"> 6GB</label>
+            </div>
+
+        </section>
+    <div class="product-page">
+        <section class="products">
+            <h2>판매 상품</h2>
+            <div class="product-list">
+                <!-- 페이지 1에 표시할 상품 정보 -->
+                
+            </div>
+        </section>
+    </div>
+
+    <div class="pagination" id="pagination">
+        <!-- 페이지 번호를 동적으로 생성할 영역 -->
+    </div>
+    <script src="Productpage.js"></script>
+
+</body>
+</html>

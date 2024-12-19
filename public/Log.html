@@ -1,0 +1,58 @@
+<!--Log.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>로그인 페이지</title>
+     <link rel="stylesheet" type="text/css" href="styles.css">
+     <script src="login.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <div class="top"> 
+            <!-- 맨위 작은 메뉴 -->
+                <ul class="top-menu">
+                    <li class="test"><a href="Raffle.html"><p>래플</p></a></li>
+                    <li class="test"><a href="Createac.html"><p>회원가입</p></a></li>
+                    <li class="test"><a href="Mypage.html"><p>마이페이지</p></a></li>
+                    <li class="test"><a href="ShoppingCart.html"><p>장바구니</p></a></li>
+                </ul>
+        </div>
+        <!-- 제목 타이틀 -->
+        <hl class="title">
+            <img src="images/DGBM_ON.png" alt="logo" width="225">
+            Graphic Card Shop
+        </hl>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="Productpage.html">Products</a></li> <!--PRODUCT 클릭시 productpage.html로 이동-->
+                <li><a href="customer.html">Customer Service</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="login-container">
+        <h1>로그인</h1>
+        <div class="loginForm">
+            <form id="loginForm">
+                <label for="user_name" class="user_name">ID</label>
+                <input type="text" id="user_name" name="user_name" required>
+                <br>
+                <label for="password" class="password">비밀번호</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <button type="submit" class="submit">로그인</button>
+            </form>            
+        </div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2023 DGBM</p>
+    </footer>
+</body>
+</html>

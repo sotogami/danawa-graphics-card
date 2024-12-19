@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="/product_detail.css">
+
+    <title>제품 상세 페이지</title>
+</head>
+<body>
+    <header>
+        <div class="top"> 
+            <!-- 맨위 작은 메뉴 -->
+                <ul class="top-menu">
+                    <li class="test"><a href="Raffle.html"><p>래플</p></a></li>
+                    <li class="test"><a href="Log.html"><p>로그아웃</p></a></li>
+                    <li class="test"><a href="Mypage.html"><p>마이페이지</p></a></li>
+                    <li class="test"><a href="ShoppingCart.html"><p>장바구니</p></a></li>
+                </ul>
+        </div>
+        <!-- 제목 타이틀 -->
+        <hl class="title">
+            <img src="images/DGBM_ON.png" alt="logo" width="225">
+            Graphic Card Shop
+        </hl>
+        </div>
+        <h1>Graphic Card Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="main_logged_in.html">Home</a></li>
+                <li><a href="Productpage.html">Products</a></li>
+                <li><a href="customer.html">Customer Service</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="product-detail">
+        <img src="" alt="Product Image" id="product-image">
+        <h3 id="product-name"></h3>
+        <p id="product-price"></p>
+        
+        <!-- 상품 상세 페이지 내에 댓글 영역 추가 -->
+        <div id="comments-section">
+            <h3>제품 댓글</h3>
+            <ul id="comments-list"></ul>
+        </div>
+
+        <!-- 별점 입력을 위한 HTML -->
+    <div id="star-rating">
+        <input type="radio" id="star5" name="rating" value="5" />
+        <label for="star5" title="5 stars">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4" />
+        <label for="star4" title="4 stars">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3" />
+        <label for="star3" title="3 stars">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2" />
+        <label for="star2" title="2 stars">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1" />
+        <label for="star1" title="1 star">&#9733;</label>
+    </div>
+
+
+        <!-- 댓글 입력 폼 -->
+        <textarea id="comment-input" placeholder="댓글을 입력하세요"></textarea>
+        
+        <!-- 댓글 추가 버튼 -->
+        <button id="add-comment-button">댓글 추가</button>
+        
+        <!-- 장바구니에 추가 버튼 -->
+        <button id="add-to-cart-button">장바구니에 추가</button>
+    </div>
+
+    <script src="product_detail.js"></script>
+</body>
+</html>

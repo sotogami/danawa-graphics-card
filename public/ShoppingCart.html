@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>장바구니 페이지</title>
+  <link rel="stylesheet" href="ShoppingCart.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  </style>
+</head>
+<body>
+  <header>
+    <div class="top"> 
+        <!-- 맨위 작은 메뉴 -->
+            <ul class="top-menu">
+              <li class="test"><a href="Raffle.html"><p>래플</p></a></li>
+              <li class="test"><a href="Log.html"><p>로그아웃</p></a></li>
+              <li class="test"><a href="Mypage.html"><p>마이페이지</p></a></li>
+            </ul>
+    </div>
+    <!-- 제목 타이틀 -->
+    <hl class="title">
+        <img src="images/DGBM_ON.png" alt="logo" width="225">
+        Graphic Card Shop
+    </hl>
+    <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="Productpage.html">Products</a></li> <!--PRODUCT 클릭시 productpage.html로 이동-->
+            <li><a href="customer.html">Customer Service</a></li>
+        </ul>
+    </nav>
+</header>
+<div id="container">
+  <div id="basket">
+    <div id="header">
+      <div>장바구니</div>
+      <div>장바구니 < 주문서< 주문완료</div>
+    </div>
+
+    
+    
+    <div id="summary">
+      <div>전체 상품 갯수</div>
+      <input type="checkbox" id="selectAll">
+      <div>상품명</div>
+      <div>판매가</div>
+      <div>수량</div>
+      <div>주문금액</div>
+      <div>주문관리</div>
+    </div>
+    <!-- 아래는 수정된 부분입니다. -->
+    <div id="empty-cart-message" style="display: none; text-align: center; padding: 20px;">
+      장바구니가 비어있습니다.
+    </div>
+    <div class="separator"></div>
+    <div id="details2">
+      <!-- 장바구니 아이템들이 여기에 표시됩니다. -->
+    </div>
+    <div id="buttons">
+      <button onclick="deleteSelected()">선택 상품 삭제 /</button>
+      <button onclick="deleteAll()">모든 상품 삭제</button>
+    </div>
+  </div>
+</div>
+<div id="order-button-container">
+  <button id="order-button" onclick="placeOrder()">주문하기</button>
+</div>
+<script src="ShoppingCart.js"></script>
+<script src="mypage.js"></script>
+</body>
+</html>

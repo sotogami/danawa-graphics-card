@@ -1,0 +1,474 @@
+ /* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 992px;
+}
+
+header {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+.sorting-button button.active {
+  background-color: #007bff; /* 변경된 배경 색상 */
+  color: #fff; /* 변경된 글자 색상 */
+  border-color: #007bff; /* 변경된 테두리 색상 */
+}
+
+.sorting-button button {
+  background-color: #ffffff; /* 버튼 배경 색상 */
+  color: #333; /* 버튼 글자 색상 */
+  border: 1px solid #ccc; /* 버튼 테두리 색상 */
+  padding: 10px; /* 버튼 내부 여백 */
+  cursor: pointer;
+}
+
+.sorting-button {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.hit-ranking-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto; 
+}
+
+.hit-ranking-section {
+    display: flex;
+    width:1000px;
+    min-width: auto;
+    text-align: center;
+}
+/* 제품 이미지 슬라이드 */
+.slide__image {
+  width: 100%;
+  height: auto;
+  max-width: 500px; /* 최대 너비를 원하는 크기로 조절 */
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Hit 상품 이미지 스타일 */
+.product img {
+  width: 100%;
+  height: auto;
+  max-width: 500px; /* 최대 너비를 원하는 크기로 조절 */
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+
+.horizontal-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ranking-section {
+   display: flex;
+    
+}
+
+
+.products {
+    width: 735px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+    padding: 20px;
+}
+
+.product {
+    display: inline;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+    align-items: center;
+}
+
+.hit-product{
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+}
+
+.customer-service {
+ 
+    padding: 20px;
+}
+
+.postings {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer {
+    background-color: #C84521;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.top {
+    font-size: 10px;
+    background-color: #E7870B;
+    padding: 10px 0;
+}
+
+
+.top-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    margin-right: 10px;
+}
+
+.top-menu li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.top-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+.title {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 30px;
+    font-style:oblique;
+    display: flex; 
+    align-items: center;
+}
+.title img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+.background {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #888;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+button {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+  
+  .slide {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide__list {
+    display: flex;
+    transform: translate(0, 0);
+  }
+  
+  .slide__item {
+    flex: 0 0 100%;
+    list-style: none;
+  }
+  
+  .slide__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .buttons {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 1rem);
+  }
+  
+  .buttons__prev,
+  .buttons__next {
+    position: absolute;
+    top: 50%;
+    width: 36px;
+    height: 36px;
+    background: #333;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .buttons__prev {
+    left: 1rem;
+  }
+  
+  .buttons__next {
+    right: 1rem;
+  }
+  
+  .paginations {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    text-align: center;
+    
+  }
+  
+  .pagination {
+    width: 12px;
+    height: 12px;
+    background: rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+  }
+  
+  .pagination:not(:last-child) {
+    margin-right: 0.3rem;
+  }
+  
+  .pagination.on {
+    background: #333;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/*여기부터 Log.html*/
+.login-container {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.submit{
+width: 100%;
+padding: 10px;
+background-color: #E7870B;
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+width: 324px;
+height: 40px;
+
+}
+
+.login-form{
+width: 500px;
+height: 440px;
+}
+.username{
+font-size: 30px;
+padding: 20px;
+}
+
+.password{
+font-size: 30px;
+padding: 20px;
+}
+/*여기까지 Log.html입니다.*/
+
+/*여기부터 createac.html*/
+.form-group{
+  width: 400px;
+  height: 120px;
+  font-size: 20px;
+  text-align : left;
+}
+
+.double_check {
+  width: 100%;
+  padding: 10px;
+  background-color: #E7870B;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+}
+
+.submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #E7870B;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+}
+
+.tel1{
+  width: 60px;
+  height: 40px;
+}
+
+.phone{
+  display: flex;
+}
+.product-page {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+         }
+
+         .filter-container {
+            width: 70%;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 10px;
+         }
+
+        .manufacturer-options,
+        .nvidia-options,
+        .chipset-options,
+        .amd-options,
+        .memory-options {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+         }
+
+         .manufacturer-options h3,
+         .nvidia-options h3,
+         .chipset-options h3,
+         .amd-options h3,
+         .memory-options h3 {
+            margin-right: 10px;
+         }
+
+         .manufacturer-options label,
+         .nvidia-options label,
+         .chipset-options label,
+         .amd-options label,
+         .memory-options label {
+            display: flex;  
+            align-items: center; 
+            width: 100px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            white-space: nowrap;
+            flex-direction: row-reverse;
+            justify-content: center; 
+            align-items: center;
+         }
+
+         .sorting-options {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+         }
+
+         .sorting-option {
+            margin: 0 10px;
+            cursor: pointer;
+         }
+
+         .price-range {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+         }
+
+         .price-range input {
+            width: 80px;
+            margin-right: 10px;
+         }
+
+         .price-range button {
+            padding: 5px 10px;
+            cursor: pointer;
+         }
+
+         .product-list {
+            display: flex;
+            flex-wrap: wrap;
+         }
+
+         .product {
+            width: 30%;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+         }
+
+         .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+         }
+
+         .page-number {
+            margin: 5px;
+            cursor: pointer;
+         }
+         .product img {
+            max-width: 100%; 
+            height: auto; 
+        }
+
+/*여기까지 createac.html*/

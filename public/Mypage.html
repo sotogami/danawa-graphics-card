@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마이페이지</title>
+    <link rel="stylesheet" href ="product.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mypage.css">
+    <script>
+      // 서버에서 동적으로 사용자 ID를 받아오는 로직
+      fetch('/getUserInfo')
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            const user_id = data.userId;
+            // 여기서부터는 받아온 user_id를 사용하여 다른 로직을 처리할 수 있습니다.
+            // 예: getUserInfo와 updateMyPage 함수 호출
+            getUserInfo(user_id);
+            updateMyPage(user_id);
+            // 또는 다른 함수 호출 등
+          } else {
+            console.error('사용자 ID를 가져오지 못했습니다.');
+          }
+        })
+        .catch(error => {
+          console.error('사용자 ID 요청 중 오류:', error);
+        });
+    </script>
+    <script src="ShoppingCart.js"></script>
+  </head>
+  <body>
+      <header>
+          <div class="top"> 
+              <!-- 맨위 작은 메뉴 -->
+              <ul class="top-menu">
+                  <li class="test"><a href="Raffle.html"><p>래플</p></a></li>
+                  <li class="test"><a href="Log.html"><p>로그아웃</p></a></li>
+                  <li class="test"><a href="ShoppingCart.html"><p>장바구니</p></a></li>
+              </ul>
+          </div>
+          <!-- 제목 타이틀 -->
+          <hl class="title">
+              <img src="images/DGBM_ON.png" alt="logo" width="225">
+              Graphic Card Shop
+          </hl>
+          <nav>
+              <ul>
+                  <li><a href="main_logged_in.html">Home</a></li>
+                  <li><a href="Productpage.html">Products</a></li>
+                  <li><a href="customer.html">Customer Service</a></li>
+              </ul>
+          </nav>
+      </header>
+    <div class="container">
+        <div class="left-section">
+            <div class="user-info">
+                <div class="box">
+                    <div class="box-title">사용자 정보</div>
+                    <div class="sub-box" id="login-info-box">
+                        <div class="sub-box-title">로그인 정보:</div>
+                        <div id="login-info">Loading...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-title">쇼핑 내역</div>
+                <div class="sub-box">
+                    <div class="sub-box-title">주문/배송 조회</div>
+                    <div class="order-status">준비중인 상품: 1 </div>
+                    <div class="order-status">배송 완료한 상품: 0</div>
+                    <!-- Add more order status information as needed -->
+                </div>
+                <div class="sub-box">
+                  <div class="recently-viewed">
+                  <div class="box" id="recently-viewed-box">
+                  <div class="sub-box-title">최근 본 상품</div>
+                  <div>MSI 지포스 RTX 3050 벤투스...</div>
+                  <div>GIGABYTE 라데온 RX 6600...</div>
+                  <div>GIGABYTE 지포스 GTX 1650...</div>
+                  </div>
+              </div>
+              </div>
+                <div class="sub-box">
+                    <div class="sub-box-title">활동 내역</div>
+                    <button onclick="redirectToCustomerPage()">고객센터 문의내역 바로가기</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-section">
+          <div class="box">
+              <div class="box-title">주문 내역</div>
+              <div class="sub-box">
+                <div class="sub-box-title">주문/배송조회</div>
+                <div class="order-status-container">
+                  <div class="order-status-box">
+                    <div class="order-status-item">
+                      <div class="order-status">입금대기</div>
+                      <div class="item-count">0</div>
+                    </div>
+                  </div>
+                  <div class="order-status-box">
+                    <div class="order-status-item">
+                      <div class="order-status">결제완료</div>
+                      <div id="myPageOrdersCount">주문한 상품 갯수: 0</div>
+                    </div>
+                  </div>
+                  <div class="order-status-box">
+                    <div class="order-status-item">
+                      <div class="order-status">배송중</div>
+                      <div class="item-count">0</div>
+                    </div>
+                  </div>
+                  <div class="order-status-box">
+                    <div class="order-status-item">
+                      <div class="order-status">배송완료</div>
+                      <div class="item-count">0</div>
+                    </div>
+                  </div>
+                  <div class="order-status-box">
+                    <div class="order-status-item">
+                      <div class="order-status">취소중/취소완료</div>
+                      <div class="item-count">0</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+            <div class="box">
+              <div class="box-title">최근 본 상품</div>
+              <div class="sub-box">
+                  <div class="sub-box-title">상품 내역
+                  </div>
+                  <div>MSI 지포스 RTX 3050 벤투스 2X XS OC D6 8GB</div>
+                  <div>GIGABYTE 라데온 RX 6600 EAGLE D6 8GB 제이씨현</div>
+                  <div>GIGABYTE 지포스 GTX 1650 UDV OC D5 4GB 제이씨현</div>
+              </div>
+          </div>
+          <div class="box">
+              <div class="box-title">활동 내역</div>
+              <div class="sub-box">
+                  <div class="sub-box-title">내가 작성한 리뷰관리</div>
+                  <div>AFOX 지포스 G210... - 이제품 진짜 짱조음 ㅇㅇ</div>
+                  <div>GIGABYTE 지포스 GTX 1660... - 그래픽카드 종결</div>
+                  <!-- Add more reviews/comments as needed -->
+              </div>
+          </div>
+      </div>
+  </div>
+    <script src="mypage.js"></script>
+    <script src="Productpage.js"></script>
+    
+  </body>
+</html>

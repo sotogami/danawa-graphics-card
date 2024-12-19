@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* 배경색 추가 */
+}
+
+.raffle-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.raffle-title {
+  float: left;
+  font-size: 24px;
+  color: black;
+  margin-left: 20%;
+  font-weight: bold;
+}
+
+.raffle-info {
+  float: right;
+  font-size: 22px;
+  color: black;
+  margin-right: 20%;
+  font-weight: bold;
+}
+
+.timer-container {
+  margin-top: 200px;
+}
+
+#countdown {
+  font-size: 120px;
+  color: black;
+}
+
+.participants {
+  margin-top: 20px;
+  font-size: 18px;
+  color: black;
+}
+
+.enter-button {
+  margin-top: 20px;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.result-button {
+  margin-top: 20px;
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: orange;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.product-details {
+  text-align: center; /* 가운데 정렬 */
+}
+
+.product-name {
+  max-width: 70%; /* 원하는 비율로 조절 */
+  margin: 0 auto; /* 좌우 중앙 정렬 */
+}
+
+.product-name img {
+  max-width: 100%; /* 이미지가 부모의 너비를 벗어나지 않도록 설정 */
+  height: auto; /* 비율 유지 */
+ 
+}
+
+
+.product-cost {
+  margin-top: 10px;
+  font-size: 18px;
+  color: black;
+}
+
+.blur-text {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.bold-text {
+  font-weight: bold;
+  color: black; /* 흐릿한 텍스트 색상으로 유지 */
+}
+
+.percentage {
+  color: red; /* 빨간색으로 변경 */
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="ramimg.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Card Shop</title>
+</head>
+<body>
+    <header>
+        <div class="top"> 
+            <!-- 맨위 작은 메뉴 -->
+                <ul class="top-menu">
+                    <li class="test"><a href="Raffle.html"><p>래플</p></a></li>
+                    <li class="test"><a href="main.html"><p>로그아웃</p></a></li>
+                    <li class="test"><a href="Mypage.html"><p>마이페이지</p></a></li>
+                    <li class="test"><a href="ShoppingCart.html"><p>장바구니</p></a></li>
+                </ul>
+        </div>
+        <!-- 제목 타이틀 -->
+        <hl class="title">
+            <img src="images/DGBM_ON.png" alt="logo" width="225">
+            Graphic Card Shop
+        </hl>
+        </div>
+        <h1>Graphic Card Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="main_logged_in.html">Home</a></li>
+                <li><a href="Productpage.html">Products</a></li>
+                <li><a href="customer.html">Customer Service</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- 메뉴바 밑-->
+<img src="images/background_main2.png" alt="background_main" class="background">
+<!-- 제품 이미지 슬라이드-->
+<div class="slide"> 
+    <ul class="slide__list">
+      <li class="slide__item">
+        <img class="slide__image" src="images/306012gbwhite.jpg"  />
+      </li>
+      <li class="slide__item">
+        <img class="slide__image" src="images/30608gb.jpg"  />
+      </li>
+      <li class="slide__item">
+        <img class="slide__image" src="images/rx770012gb.jpg"  />
+      </li>
+      <li class="slide__item">
+        <img class="slide__image" src="images/308010gb.jpg"  />
+      </li>
+      <li class="slide__item">
+        <img class="slide__image" src="images/30708gbblack.jpg"  />
+      </li>
+    </ul>
+    <div class="buttons"></div>
+    <div class="paginations"></div>
+  </div>
+<!-- 제품 -->
+<body onload="showImage()">
+    <section class="product">
+        <div class="hit-ranking-container">
+            <!-- Hit 상품 및 랭킹 섹션을 감싸는 div -->
+            <div class="hit-ranking-section">
+                <!-- 실시간 랭킹 -->
+                <div class="horizontal-item ranking-section">
+                    <h2>실시간 랭킹</h2>
+                    <!-- 랭킹 항목들을 순서대로 배치 -->
+                    <div class="hit-product">
+                        <img id="introImg3" style="min-width: 300px; min-height: 300px; max-width: 300px; max-height: 300px;">
+                        <h3 id="imgtag3"></h3>
+                        <button class="buy-button">구매하기</button>
+                    </div>
+                    <div class="hit-product">
+                        <img id="introImg4" style="min-width: 300px; min-height: 300px; max-width: 300px; max-height: 300px;">
+                        <h3 id="imgtag4"></h3>
+                        <button class="buy-button">구매하기</button>
+                    </div>
+                </div>
+
+                <!-- Hit 상품 -->
+                <div class="horizontal-item ranking-section">
+                    <h2>Hit 상품!</h2>
+                    <!-- Hit 상품 항목들을 순서대로 배치 -->
+                    <div class="hit-product">
+                        <img id="introImg1" style="min-width: 300px; min-height: 300px; max-width: 300px; max-height: 300px;">
+                        <h3 id="imgtag1"></h3>
+                        <button class="buy-button">구매하기</button>
+                    </div>
+                    <div class="hit-product">
+                        <img id="introImg2" style="min-width: 300px; min-height: 300px; max-width: 300px; max-height: 300px;">
+                        <h3 id="imgtag2"></h3>
+                        <button class="buy-button">구매하기</button>
+                    </div>
+                </div>
+
+                <!-- 이번 달 판매순위 -->
+                <div class="horizontal-item ranking-section">
+                    <h2>이번 달 판매순위</h2>
+                    <!-- 판매순위 항목들을 순서대로 배치 -->
+                    <div class="hit-product">
+                        <img id="introImg5" style="min-width: 300px; min-height: 300px; max-width: 300px; max-height: 300px;">
+                        <h3 id="imgtag5"></h3>
+                        <button class="buy-button">구매하기</button>
+                    </div>
+                    <div class="hit-product">
+                        <img id="introImg6" style="min-width: 300px; min-height: 300px; max-width: 300px; max-height: 300px;">
+                        <h3 id="imgtag6"></h3>
+                        <button class="buy-button">구매하기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

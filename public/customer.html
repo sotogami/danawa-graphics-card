@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Graphic Card Shop</title>
+    <link rel="stylesheet" type="text/css" href="customer.css">
+    <script src="ramimg.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top"> 
+            <!-- 맨위 작은 메뉴 -->
+                <ul class="top-menu">
+                    <li class="test"><a href="Raffle.html"><p>래플</p></a></li>
+                    <li class="test"><a href="Createac.html"><p>회원가입</p></a></li>
+                    <li class="test"><a href="Log.html"><p>로그아웃</p></a></li>
+                    <li class="test"><a href="mypage.html"><p>마이페이지</p></a></li>
+                    <li class="test"><a href="ShoppingCart.html"><p>장바구니</p></a></li>
+                </ul>
+        </div>
+        <!-- 제목 타이틀 -->
+        <hl class="title">
+            <img src="images/DGBM_ON.png" alt="logo" width="225">
+            Graphic Card Shop
+        </hl>
+        <nav>
+            <ul>
+                <li><a href="main_logged_in.html">Home</a></li>
+                <li><a href="Productpage.html">Products</a></li> <!--PRODUCT 클릭시 productpage.html로 이동-->
+                <li><a href="customer.html">Customer Service</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- 메뉴바 밑-->
+    
+    <main>
+        <section class="question-form">
+            <h2>Q&A</h2>
+            <form id="questionForm">
+                <label for="title">제목:</label>
+                <input type="text" id="title" name="title" required>
+
+                <label for="content">내용:</label>
+                <textarea id="content" name="content" rows="4" required></textarea>
+                <button type="submit" id="postButton">게시하기</button>
+            </form>
+        </section>
+
+        <section class="question-list">
+            <h2>질문 목록</h2>
+            <ul id="questionList">
+                <!-- 여기에 서버에서 받아온 질문 목록을 동적으로 추가할 수 있습니다. -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <!-- 원하는 추가 정보 또는 링크 등을 포함할 수 있습니다. -->
+    </footer>
+
+    <script src="qna.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.product-detail {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#comment-input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#add-comment-button,
+#add-to-cart-button {
+    padding: 10px;
+    background-color: #E7870B;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-comment-button:hover,
+#star-rating {
+    display: inline-block;
+    font-size: 0; 
+}
+
+#star-rating input {
+    display: none;
+}
+
+#star-rating label {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ddd;
+}
+#star-rating label.active {
+    color: #fdd836; /* 선택된 별의 색상 */
+}
+
+#star-rating label:hover,
+#star-rating input:checked + label {
+    color: #fdd836; /* 선택된 별의 색상 */
+}
+/* CSS 파일 또는 <style> 태그 안에 추가 */
+.star-icon::before {
+    content: '\2605'; /* 별 모양 유니코드 */
+    color: #ffd700; /* 별 색상 (노란색) */
+}
+
+.comment-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.comment-item strong {
+    margin-bottom: 5px;
+}
+
+.comment-item hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%; 
+    border: 1px solid #ccc;
+}
+
+.star-rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.star-icon {
+    margin-right: 5px;
+    font-size: 20px; 
+}
+
+.comment-content {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    flex-grow: 1; 
+}
+
+.comment-date {
+    margin-top: 5px;
+    color: #555; 
+    font-size: 14px; 
+}
+
+
+

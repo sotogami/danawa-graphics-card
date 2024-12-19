@@ -1,0 +1,137 @@
+/* customer.css */
+
+/* 고객 페이지 전체에 대한 스타일 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 992px;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* 메인 섹션 스타일 */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Q&A 섹션 스타일 */
+.question-form,
+.question-list {
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    margin-bottom: 16px;
+    padding: 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #C84521;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.top {
+    font-size: 10px;
+    background-color: #E7870B;
+    padding: 10px 0;
+}
+
+.top-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    margin-right: 10px;
+}
+
+.top-menu li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.top-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.title {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 30px;
+    font-style: oblique;
+    display: flex; 
+    align-items: center;
+}
+
+.title img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+}
+#postButton {
+    background-color: #E7870B;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#postButton:hover {
+    background-color: #D67A0A;
+}
+

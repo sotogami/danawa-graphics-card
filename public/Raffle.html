@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raffle 페이지</title>
+  <link rel="stylesheet" href="raffle.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="top"> 
+            <!-- 맨위 작은 메뉴 -->
+                <ul class="top-menu">
+                    <li class="test"><a href="Log.html"><p>로그아웃</p></a></li>
+                    <li class="test"><a href="Mypage.html"><p>마이페이지</p></a></li>
+                    <li class="test"><a href="ShoppingCart.html"><p>장바구니</p></a></li>
+                </ul>
+        </div>
+        <!-- 제목 타이틀 -->
+        <hl class="title">
+            <img src="images/DGBM_ON.png" alt="logo" width="225">
+            Graphic Card Shop
+        </hl>
+        <nav>
+            <ul>
+                <li><a href="main_logged_in.html">Home</a></li>
+                <li><a href="Productpage.html">Products</a></li> <!--PRODUCT 클릭시 productpage.html로 이동-->
+                <li><a href="customer.html">Customer Service</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="raffle-container">
+      <div class="raffle-title">Raffle</div>
+      <div class="raffle-info">래플 안내</div>
+  
+      <div class="timer-container">
+        <div id="countdown">00:00:00</div>
+      </div>
+  
+      <div class="participants">000명 참여 중</div>
+  
+      <button class="enter-button" onclick="enterRaffle()" id="enterButton">응모하기</button>
+      <button class="result-button" onclick="checkResult()">결과확인</button>
+      <div id="winner-display"></div>
+  
+      <div class="product-details">
+        <div class="product-name">
+          <div style="display: inline-block; text-align: center;">
+            <img src="images/rtx_3060.webp" alt="">
+            <br>
+            <p style="margin: 0; max-width: 100%; text-align: center;">PNY 지포스 RTX 3060 UPRISING D6 12GB Dual 마이크로닉스</p>
+          </div>
+        </div>
+        <div class="product-cost">
+          25,300,000원 <span class="blur-text">--------</span>
+          <span class="bold-text">1,000원</span>&nbsp;&nbsp;<span class="percentage">99%</span>
+        </div>
+      </div>
+    </div>
+    <script src="raffle.js"></script>
+  
+  </body>
+  </html>
+
